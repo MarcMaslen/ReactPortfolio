@@ -1,0 +1,171 @@
+@import "../../global.scss";
+
+.work {
+  background-color: rgb(20, 73, 220);
+  display: flex;
+  align-items: center;
+  justify-self: center;
+
+  .arrow {
+    height: 80px;
+    position: absolute;
+
+    @include mobile {
+      display: none;
+    }
+
+    &.left {
+      left: 100px;
+      transform: rotateY(180deg);
+      cursor: pointer;
+    }
+
+    &.right {
+      right: 100px;
+      cursor: pointer;
+    }
+  }
+
+  .slider {
+    height: 450px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+    
+
+
+    
+
+    @include mobile {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      
+
+      .item {
+        width: 900px;
+        height: 95%;
+        background-color: white;
+        box-shadow: 0 0 0 3px black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        
+
+        @include mobile {
+          width: 80%;
+          height: 150px;
+          margin: 15px 0;
+        }
+
+        .left {
+          flex: 4;
+          height: 95%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+
+          @include mobile {
+            flex: 6;
+          }
+
+          .leftcontainer {
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @include mobile {
+              width: 90%;
+              height: 90%;
+            }
+
+
+
+            .imgcontainer {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: rgb(245, 179, 155);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              @include mobile {
+                width: 20px;
+                height: 20px;
+              }
+
+              img {
+                width: 25px;
+
+                @include mobile {
+                  width: 15px;
+                }
+              }
+            }
+            h2 {
+              font-size: 30px;
+              @include mobile {
+                font-size: 10px;
+              }
+            }
+
+            p {
+              font-size: 20px;
+              @include mobile {
+                font: 10px;
+                margin-top: 2px;
+              }
+            }
+
+            button {
+              width: 170px;
+              height: 40px;
+              color:white;
+              background-color: rgb(68, 52, 212);
+              border: none;
+              font-size: 16px;
+              border-radius: 10px;
+              font-weight: 500;
+              cursor: pointer;
+              //text-decoration: underline;
+              @include mobile {
+                font: 10px;
+                margin-top: 2px;
+              }
+            }
+          }
+        }
+
+        .right {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+          @include mobile {
+            flex: 6;
+          }
+
+          img {
+            width: 500px;
+            //transform: rotate(-10deg);
+          }
+        }
+      }
+    }
+  }
+}
