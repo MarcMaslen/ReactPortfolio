@@ -110,7 +110,7 @@
                 width: 25px;
 
                 @include mobile {
-                  width: 15px;
+                  width: 10px;
                 }
               }
             }
@@ -124,7 +124,7 @@
             p {
               font-size: 20px;
               @include mobile {
-                font: 10px;
+                font-size: 10px;
                 margin-top: 2px;
               }
             }
@@ -141,8 +141,10 @@
               cursor: pointer;
               //text-decoration: underline;
               @include mobile {
-                font: 10px;
+                font-size: 10px;
                 margin-top: 2px;
+                width: 70px;
+                height: 30px;
               }
             }
           }
@@ -157,7 +159,8 @@
           overflow: hidden;
 
           @include mobile {
-            flex: 6;
+            flex: 4;
+            height: 100%;
           }
 
           img {

@@ -1,4 +1,6 @@
 
+@import '../../global.scss';
+
 .popup {
   position: fixed;
   top: 0;
@@ -31,6 +33,12 @@
     display: flex;
     transition: all 2s ease-in;
     box-shadow: 0 0 0 5px black;
+    @include mobile {
+      left: 3vh;
+      height: 75%;
+      width: 75%;
+      margin: 15px 0;
+    }
     
     
 
@@ -46,6 +54,11 @@
         font-weight: 500;
         cursor: pointer;
         transition: all 1s ease;
+        @include mobile {
+          width: 20%;
+          height: 5%;
+          margin: 15px 0;
+        }
     }
 
     .left {
@@ -70,17 +83,27 @@
           background-color: rgb(238, 232, 232);
           //text-decoration: underline;
           border-radius: 8px;
+          @include mobile {
+            font-size: 17px;
+            margin-top: 20px;
+          }
         }
 
         h2 {
           font-size: 25px;
           margin-top: 20px;
           font-weight: 500;
+          @include mobile {
+            font-size: 15px;
+          }
           
 
           span {
             font-size: 20px;
             font-weight: 400;
+            @include mobile {
+              font-size: 12px;
+            }
           }
         }
 
@@ -108,11 +131,17 @@
       flex-direction: column;
       overflow: hidden;
       height: 100%;
+      @include mobile {
+        flex: 0;
+      }
 
 
       img {
         width: 500px;
         //transform: rotate(-10deg);
+        @include mobile {
+          display: none;
+        }
       }
     }
 
