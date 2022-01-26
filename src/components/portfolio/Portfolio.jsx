@@ -5,7 +5,7 @@ import {
   featuredPortfolio,
   webPortfolio,
   gamePortfolio,
-  designPortfolio,
+  softwarePortfolio,
   uniPortfolio,
 } from "../../data";
 
@@ -26,12 +26,12 @@ export default function Portfolio() {
       title: "Game Development",
     },
     {
-      id: "design",
-      title: "Design",
+      id: "software",
+      title: "Software Development",
     },
     {
       id: "uni",
-      title: "Uni Work",
+      title: "University Projects",
     },
   ];
 
@@ -46,8 +46,8 @@ export default function Portfolio() {
       case "game":
         setData(gamePortfolio);
         break;
-      case "design":
-        setData(designPortfolio);
+      case "software":
+        setData(softwarePortfolio);
         break;
       case "uni":
         setData(uniPortfolio);
@@ -62,7 +62,7 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <ul>
         {list.map((item) => (
-          <PortfolioList
+          <PortfolioList 
             title={item.title}
             active={selected === item.id}
             setSelected={setSelected}
