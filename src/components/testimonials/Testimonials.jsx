@@ -6,7 +6,7 @@ export default function Testimonials() {
       id: 1,
       name: "Mark Abbs",
       title: "Awin - UK Integration Manager",
-      img: "https://media-exp1.licdn.com/dms/image/C4D03AQFwsxV-FtBVlg/profile-displayphoto-shrink_200_200/0/1573162956789?e=1643846400&v=beta&t=WQGkSjpQ3kIdifNthfTBLlh1v1-IX5B_FfpMiGAVo80",
+      img: "assets/Mark.jpg",
       icon: "assets/linkedin.png",
       desc: "Marc was an amazing asset to the UK integration team. He started as an intern, working with Access client's for" 
       + " 4 months. \nDuring this time he had worked through a good amount of access clients, catching on quick and made a guide for the Access process, allowing other "
@@ -16,7 +16,7 @@ export default function Testimonials() {
       id: 2,
       name: "Bryson C.Y",
       title: "Global Integration Assistant at Awin Global",
-      img: "https://media-exp1.licdn.com/dms/image/C5603AQG179PHMtqvyQ/profile-displayphoto-shrink_200_200/0/1604540839348?e=1643846400&v=beta&t=_mku0VVZnbqwr5B87ozCMdGVLxbNZtmZ9E1Vpup1EtY",
+      img: "assets/bryson.jpg",
       icon: "assets/linkedin.png",
       desc: "Marc and I started working together at Awin during the start of Summer 2021. We get along really quick and well over the first few months and I had the pleasure to work with him more closely when we moved to the Global Team. Marc is a quick learner and yet one of the most hardworking person I've worked with while being able to handle challenges during the busier periods. He is very responsive in group discussions and always finds ways to improves current methods. Marc has shown a great interest in the field towards Web Development and I have no doubt in his skills.",
       featured: true
@@ -25,7 +25,7 @@ export default function Testimonials() {
       id: 3,
       name: "Jackson Correa",
       title: "Awin - Current Integration Manager",
-      img: "https://media-exp1.licdn.com/dms/image/C4D03AQHRNjm29vedDQ/profile-displayphoto-shrink_100_100/0/1555426576447?e=1643846400&v=beta&t=uBbV8wPLs8YQR37PfmNLGbbAJPa3Alrx6j-j0tvNDsY",
+      img: "assets/jackson.jpg",
       icon: "assets/linkedin.png",
       desc: "He has done an amazing job switching over to handling European clients. He had also taken on more responsability such as working in a team of two to deal with all European Access" +
       " clients and doing Account Management tasks.",

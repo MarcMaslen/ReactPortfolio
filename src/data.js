@@ -26,7 +26,7 @@ export const featuredPortfolio = [
   {
     id: 5,
     title: "React Expense Tracker",
-    img: "https://www.mobillsapp.com/images/contents/expense-tracker-charts.png",
+    img: "https://www.thebalance.com/thmb/ZJzzKiJtHguzxx_Ma2ZqE5TC4hk=/1500x1000/filters:fill(auto,1)/best-expense-tracker-apps-4158958_final-926fb0c0dd404614ac80b829f1b76ee8.png",
     link: "https://github.com/MarcMaslen/ExpenseTracker",
   },
   {
@@ -41,7 +41,7 @@ export const webPortfolio = [
   {
     id: 1,
     title: "React Expense Tracker",
-    img: "https://www.mobillsapp.com/images/contents/expense-tracker-charts.png",
+    img: "https://www.thebalance.com/thmb/ZJzzKiJtHguzxx_Ma2ZqE5TC4hk=/1500x1000/filters:fill(auto,1)/best-expense-tracker-apps-4158958_final-926fb0c0dd404614ac80b829f1b76ee8.png",
     link: "https://github.com/MarcMaslen/ExpenseTracker",
   },
   {
