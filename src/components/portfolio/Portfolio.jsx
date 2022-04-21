@@ -19,7 +19,7 @@ export default function Portfolio() {
     },
     {
       id: "web",
-      title: "Web App",
+      title: "Web Development",
     },
     {
       id: "game",

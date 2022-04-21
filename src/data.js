@@ -1,9 +1,9 @@
 export const featuredPortfolio = [
   {
     id: 1,
-    title: "Countdown Site",
-    img: "https://c.tadst.com/gfx/1200x630/cardimage-countdowntoanything03.png?1",
-    link: "https://github.com/MarcMaslen/countdown.github.io",
+    title: "Web Design Business",
+    img: "assets/webdev.jpg",
+    link: "http://www.bluezerowebdesigns.com",
   },
   {
     id: 2,
@@ -55,6 +55,18 @@ export const webPortfolio = [
     title: "Countdown Site",
     img: "https://c.tadst.com/gfx/1200x630/cardimage-countdowntoanything03.png?1",
     link: "https://github.com/MarcMaslen/countdown.github.io",
+  },
+  {
+    id: 4,
+    title: "Web Design Business",
+    img: "assets/webdev.jpg",
+    link: "http://www.bluezerowebdesigns.com",
+  },
+  {
+    id: 5,
+    title: "Rory's Portfolio (friend)",
+    img: "assets/rory.png",
+    link: "https://kaleidoscopic-banoffee-14c20e.netlify.app/",
   },
 ];
 
