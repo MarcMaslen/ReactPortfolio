@@ -2,7 +2,7 @@ export const featuredPortfolio = [
   {
     id: 1,
     title: "Web Design Business",
-    img: "assets/webdev.jpg",
+    img: "assets/webdesign.jpeg",
     link: "http://www.bluezerowebdesigns.com",
   },
   {
@@ -59,12 +59,12 @@ export const webPortfolio = [
   {
     id: 4,
     title: "Web Design Business",
-    img: "assets/webdev.jpg",
+    img: "assets/webdesign.jpeg",
     link: "http://www.bluezerowebdesigns.com",
   },
   {
     id: 5,
-    title: "Rory's Portfolio (friend)",
+    title: "Rory's Portfolio",
     img: "assets/rory.png",
     link: "https://kaleidoscopic-banoffee-14c20e.netlify.app/",
   },
@@ -92,6 +92,12 @@ export const softwarePortfolio = [
     img: "https://images.squarespace-cdn.com/content/v1/5a3254202278e7f239fff96a/1534681014361-WKOCDKTVXU3Y3ZSWU3G0/ai%402x.png",
     link: "https://github.com/MarcMaslen/AI-Search-Methods-for-the-8-Puzzle-Problem",
   },
+  {
+    id: 3,
+    title: "100 Days Of Python",
+    img: "https://repository-images.githubusercontent.com/344494700/f3cb0880-895f-11eb-8e3e-1eb4456d34df",
+    link: "https://github.com/MarcMaslen/100DaysOfPython",
+  },
 ];
 
 export const uniPortfolio = [
@@ -118,5 +124,11 @@ export const uniPortfolio = [
     title: "Steam Recreated",
     img: "https://cdn.cloudflare.steamstatic.com/store/home/store_home_share.jpg",
     link: "https://github.com/MarcMaslen/MySteamSite.github.io",
+  },
+  {
+    id: 5,
+    title: "Map Of Earth - Java",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkruDh52xPjFuuYPYjmPY1PvRTcp9OsbvfPg&usqp=CAU",
+    link: "https://github.com/MarcMaslen/MapOfEarth",
   },
 ];
