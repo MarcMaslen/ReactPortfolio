@@ -1,7 +1,7 @@
 export const featuredPortfolio = [
   {
     id: 1,
-    title: "Web Design Business",
+    title: "Web Design Business ",
     img: "assets/webdev.jpg",
     link: "http://www.bluezerowebdesigns.com",
   },

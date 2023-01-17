@@ -46,6 +46,10 @@
                     font-size: 15px;
                     font-weight: 500;
                 }
+
+                @include desktop{
+                        display: none;
+                }
             }
 
         }

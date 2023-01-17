@@ -1,9 +1,56 @@
 $mainColor: #15023a;
 
 $width: 760px;
+$widthtwo: 1210px;
+$widththree:1300px;
+$widthFour: 1100px;
+$widthFive: 1720px;
+$widthSix: 1600px;
+
 
 @mixin mobile {
     @media (max-width: #{$width}) {
+        @content
+        
+    }
+    
+}
+
+@mixin desktop {
+    @media (max-width: #{$widthtwo}) {
+        @content
+        
+    }
+    
+}
+
+
+@mixin intro {
+    @media (max-width: #{$widththree}) {
+        @content
+        
+    }
+    
+}
+
+@mixin portfolio {
+    @media (max-width: #{$widthFour}) {
+        @content
+        
+    }
+    
+}
+
+@mixin portfolioTwo {
+    @media (max-width: #{$widthFive}) {
+        @content
+        
+    }
+    
+}
+
+@mixin Work {
+    @media (max-width: #{$widthSix}) {
         @content
         
     }
