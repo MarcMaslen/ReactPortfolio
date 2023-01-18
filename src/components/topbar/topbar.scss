@@ -26,7 +26,13 @@
                 text-decoration: none;
                 color: inherit;
                 margin-right: 40px;
+
+                @include mobile{
+                    font-size: 25px;
+                }
             }
+
+        
 
             .itemcontainer{
                 display: flex;
