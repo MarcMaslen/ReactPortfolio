@@ -12,6 +12,10 @@
     .left{
         flex: 0.5;
         overflow: hidden;
+        
+        @include longscreen{
+            margin-top: 15vh;
+        }
 
         @include intro{
             flex: 0.7;

@@ -6,6 +6,7 @@ $widththree:1300px;
 $widthFour: 1100px;
 $widthFive: 1720px;
 $widthSix: 1600px;
+$height: 1500px;
 
 
 @mixin mobile {
@@ -14,6 +15,13 @@ $widthSix: 1600px;
         
     }
     
+}
+
+@mixin longscreen{
+    @media (min-height: #{$height}) {
+        @content
+        
+    }
 }
 
 @mixin desktop {
