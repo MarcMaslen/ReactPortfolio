@@ -18,16 +18,22 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <span>marcmaslen123@gmail.com</span>
           </div>
           <div className="itemcontainer">
-            <Twitter className='icon'/>
-            <span>@Swiftyair1</span>
+           <a href="https://twitter.com/Swiftyair1" target="_blank">
+              <Twitter className='icon'/>
+              <span>@Swiftyair1</span>
+            </a>
           </div>
           <div className="itemcontainer">
-            <LinkedIn className='icon' />
-            <span>Marc Maslen</span>
+            <a href="https://www.linkedin.com/in/marc-maslen-489b48189/" target="_blank">
+              <LinkedIn className='icon' />
+              <span>Marc Maslen</span>
+            </a>
           </div>
           <div className="itemcontainer">
-            <GitHub className='icon' />
-            <span>Marc Maslen</span>
+            <a href="https://github.com/MarcMaslen" target="_blank">
+              <GitHub className='icon' />
+              <span>Marc Maslen</span>
+            </a>  
           </div>
         </div>
 
