@@ -1,32 +1,37 @@
 import "./work.scss";
 import { useState} from "react";
-import Popup from "./WorkPopUp";
-import Button from "../button/Button";
+//import Popup from "./WorkPopUp";
+//import Button from "../button/Button";
 
 export default function Work() {
   const [currentSlider, setCurrentSlider] = useState(0);
-  const [buttonPopup, setButtonPopup] = useState(false);
+  //const [buttonPopup, setButtonPopup] = useState(false);
 
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
-      title: "Web Design",
-      desc: "This website was built by me using ReactJS, Check out my GitHub to see more WebDev projects made using HTML, CSS, JavaScript and ReactJS and more! ",
+      title: "Web Development & Design",
+      desc: "This website was built using ReactJS, SCSS and HTML. I made this website during my time "
+      + "at university so I could advertise myself and my work in a creative way." +
+       " Feel free to check out my GitHub to see more WebDev projects made using HTML, CSS, JavaScript and ReactJS such as" +
+       "my Capstone Project website I made for my Unity Tower Defence Game, a to-do list website and much more!",
       img: "assets/working.jpg",
     },
     {
       id: "2",
-      icon: "./assets/globe.png",
       title: "Software Development",
-      desc: "Check out my GitHub below to see some of my Software Development projects in a variety of languages such as Java, C#, Python ect.",
+      desc: "When it comes to software development, I am very passionate about it as a career choice. " +
+      "I think its the creativity and freedom you have that draws me to it so much."+
+      "Check out my GitHub below to see some of my Software Development projects in a variety of languages such as Java, C#, Python ect.",
       img: "assets/gaming.jpg",
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
       title: "University Projects",
-      desc: "Check out my GitHub below to see my University Projects I created. Some of the subjects were Cyber Security, Algorithms, Databases ect",
+      desc: "My time at university was the best experience I have ever had and I know that is" +
+      " a very cliché to say. However for me it did much more then teach me about computer science,"+
+      " it taught me who it is I am as a person and what kind of man I want to be in the future! Oh yeah I also did some amazing work while there too!"+
+      " Check out my GitHub below to see my University Projects I created. Some of the subjects were Cyber Security, Data Structures and Algorithms, A.I, Databases ect",
       img: "assets/webdev.PNG",
     },
   ];
@@ -51,14 +56,15 @@ export default function Work() {
             <div className="item">
               <div className="left">
                 <div className="leftcontainer">
-                  <div className="imgcontainer">
+                  <div>
                     <img src={d.icon} alt=""></img>
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <button onClick={() => setButtonPopup(true)}>Projects</button>
-
-                  <Popup
+                  <a href="https://github.com/MarcMaslen" target="_blank" rel="noreferrer">
+                    <button >Github!</button>
+                    </a>
+                  {/* <Popup
                     open={buttonPopup}
                     onClose={() => setButtonPopup(false)}
                     id={"1"}
@@ -109,7 +115,7 @@ export default function Work() {
                         alt=""
                       />
                     </div>
-                  </Popup>
+                  </Popup> */}
                 </div>
               </div>
 

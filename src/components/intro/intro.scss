@@ -12,11 +12,20 @@
     .left{
         flex: 0.5;
         overflow: hidden;
+        
+        @include longscreen{
+            margin-top: 15vh;
+        }
+
+        @include intro{
+            flex: 0.7;
+        }
 
         .imgContainer{
             width: 620px;
             height: 620px;
             background-color: rgb(29, 68, 197);
+            box-shadow: 7px 13px 8px #464444;
             border-radius: 50%;
             display: flex;
             align-items: flex-end;
@@ -25,17 +34,30 @@
             margin-top: 15vh;
             margin-right: 2vh;
             
-            
+        
+
+            @include intro{
+                height: 400px;
+                width: 400px;
+                margin-top: 25vh;
+            }
+
             @include mobile{
                 align-items: flex-start;
+                height: 300px;
+                width: 300px; 
+                margin-top: 10vh; 
             }
 
             img{
                 height: 90%;
 
+                @include intro{
+                    height: 400px;
+                }
+
                 @include mobile{
-                    height: 45%;
-                    margin-top: -10px;
+                    height: 300px;
                 }
             }
         }
@@ -46,7 +68,7 @@
         position: relative;
 
         .wrapper{
-            width: 100%;
+            width: 80%;
             height: 100%;
             padding-left: 50px;
             display: flex;
@@ -55,6 +77,7 @@
 
             @include mobile{
                 padding-left: 0;
+                width: 100%;
                 align-items: center;
             }
 
@@ -64,12 +87,15 @@
                 margin: 10px 0;
 
                 @include mobile{
-                    font-size: 40px;
+                    font-size: 30px;
                 }
             }
 
             h2{
                 font-size: 35px;
+                @include mobile{
+                    font-size: 20px;
+                }
 
             }
 
@@ -100,22 +126,6 @@
                     100%{
                         opacity: 0;
                     }
-                }
-            }
-        }
-        a{
-            position: absolute;
-            bottom: 10px;
-            
-
-            img{
-                width: 30px;
-                animation: arrowBlink 2s infinite;
-            }
-
-            @keyframes arrowBlink {
-                100%{
-                    opacity: 0;
                 }
             }
         }

@@ -10,7 +10,11 @@
     height: 80px;
     position: absolute;
 
-    @include mobile {
+    @include Work{
+      height: 60px;
+    }
+
+    @include desktop {
       display: none;
     }
 
@@ -27,20 +31,21 @@
   }
 
   .slider {
-    height: 600px;
+    height: 700px;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
     
 
-
-    
-
-    @include mobile {
+    @include desktop {
       height: 100vh;
       flex-direction: column;
       justify-content: center;
+    }
+
+    @include mobile {
+      height: 70vh;
     }
 
     .container {
@@ -52,44 +57,52 @@
       
 
       .item {
-        width: 900px;
+        width: 1200px;
         height: 95%;
         background-color: white;
-        box-shadow: 0 0 0 3px black;
+        box-shadow: 0 0 7px 7px black;
+        // box-shadow: 13px 7px 3px #696565;
         border-radius: 20px;
         display: flex;
         justify-content: center;
         
+        @include Work{
+          width: 900px;
+        }
 
-        @include mobile {
+        @include desktop {
           width: 80%;
-          height: 150px;
+          height: 250px;
           margin: 15px 0;
         }
 
+        @include mobile {
+          height: 120px;
+        }
+
         .left {
-          flex: 5;
+          flex: 7;
           height: 95%;
           display: flex;
           align-items: center;
           justify-content: center;
           
 
-          @include mobile {
+          @include desktop {
             flex: 6;
           }
 
           .leftcontainer {
             width: 70%;
-            height: 70%;
+            height: 75%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            @include mobile {
+
+            @include desktop {
               width: 90%;
               height: 90%;
             }
-
 
 
             .imgcontainer {
@@ -101,7 +114,7 @@
               align-items: center;
               justify-content: center;
 
-              @include mobile {
+              @include desktop {
                 width: 20px;
                 height: 20px;
               }
@@ -109,13 +122,18 @@
               img {
                 width: 25px;
 
-                @include mobile {
+                @include desktop {
                   width: 10px;
                 }
               }
             }
+
             h2 {
               font-size: 30px;
+              @include desktop {
+                font-size: 15px;
+              }
+
               @include mobile {
                 font-size: 10px;
               }
@@ -123,24 +141,32 @@
 
             p {
               font-size: 20px;
-              @include mobile {
-                font-size: 10px;
+
+              @include desktop {
+                font-size: 12px;
                 margin-top: 2px;
+              }
+
+              @include mobile {
+                display: none;
               }
             }
 
             button {
               width: 170px;
-              height: 40px;
+              height: 50px;
               color:white;
               background-color: rgb(68, 52, 212);
+              box-shadow: 2px 3px 2px #464444;
               border: none;
-              font-size: 16px;
+              font-size: 20px;
               border-radius: 10px;
+              margin-bottom: 10px;
               font-weight: 500;
               cursor: pointer;
               //text-decoration: underline;
-              @include mobile {
+
+              @include desktop {
                 font-size: 10px;
                 margin-top: 2px;
                 width: 70px;
@@ -158,7 +184,7 @@
           justify-content: center;
           overflow: hidden;
 
-          @include mobile {
+          @include desktop {
             flex: 4;
             height: 100%;
           }

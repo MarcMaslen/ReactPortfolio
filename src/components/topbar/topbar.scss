@@ -26,7 +26,13 @@
                 text-decoration: none;
                 color: inherit;
                 margin-right: 40px;
+
+                @include mobile{
+                    font-size: 25px;
+                }
             }
+
+        
 
             .itemcontainer{
                 display: flex;
@@ -45,6 +51,10 @@
                 span{
                     font-size: 15px;
                     font-weight: 500;
+                }
+
+                @include desktop{
+                        display: none;
                 }
             }
 

@@ -62,7 +62,7 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <ul>
         {list.map((item) => (
-          <PortfolioList 
+          <PortfolioList
             title={item.title}
             active={selected === item.id}
             setSelected={setSelected}
@@ -71,6 +71,7 @@ export default function Portfolio() {
           />
         ))}
       </ul>
+      <h3>Hover / click the images to see what each project is!</h3>
       <div className="container">
         {data.map((d) => (
           <a target="_blank" href={d.link} rel="noreferrer">
