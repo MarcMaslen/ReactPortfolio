@@ -25,7 +25,7 @@
             width: 620px;
             height: 620px;
             background-color: rgb(29, 68, 197);
-            box-shadow: 7px 13px 8px #464444;
+            box-shadow: 9px 13px 10px #464444;
             border-radius: 50%;
             display: flex;
             align-items: flex-end;
@@ -50,7 +50,11 @@
             }
 
             img{
-                height: 90%;
+                height: 900px;
+                width: 700px;
+                object-fit: none;
+                overflow: hidden;
+                object-position: 53% -5%;
 
                 @include intro{
                     height: 400px;
