@@ -59,7 +59,7 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <h1>Portfolio.</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList
@@ -71,14 +71,14 @@ export default function Portfolio() {
           />
         ))}
       </ul>
-      <h3>Hover / click the images to see what each project is!</h3>
+      <h3>Click the images to see the Github for each project!<br/> <a href="https://github.com/MarcMaslen" target="_blank">Click Here for my Github Profile</a></h3>
       <div className="container">
         {data.map((d) => (
           <a target="_blank" href={d.link} rel="noreferrer">
           <div className="item">
             <img src={d.img} alt="" />
-            <h3>{d.title}</h3>
           </div>
+          <h3>{d.title}</h3>
           </a>
         ))}
       </div>

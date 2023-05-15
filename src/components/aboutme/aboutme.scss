@@ -1,0 +1,53 @@
+@import '../../global.scss';
+
+
+.about{
+    background-color: white;
+
+    
+
+    h1{
+        font-size: 40px;
+        align-items: center;
+        text-align: center;
+        padding-top: 25px;
+        font-weight: 700;
+        
+    }
+
+    .introduction{
+
+        .left{
+            
+            p{
+            font-size: 1.2rem;
+            height: 50%;
+            font-weight: 400;
+            align-items: center;
+            text-align: center;
+            float: left;
+            width: 600px;
+            margin-left: 10vh;
+            padding-top: 3%;
+            
+                span{
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+
+        }
+
+        .middle{
+            border-left: 6px solid rgb(11, 10, 10) ;
+            height: 70vh;
+            margin-top: 2rem;
+            border-radius: 15%;
+            }
+    
+    }
+
+        
+
+    }
+
+}

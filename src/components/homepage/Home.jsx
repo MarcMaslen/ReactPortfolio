@@ -1,7 +1,7 @@
 import Topbar from "../topbar/Topbar";
 import Menu from "../menu/Menu";
 import Intro from "../intro/Intro";
-import Work from "../work/Work";
+import About from "../aboutme/Aboutme";
 import Testimonials from "../testimonials/Testimonials";
 import Contact from "../contact/Contact";
 import Portfolio from "../portfolio/Portfolio";
@@ -17,8 +17,8 @@ export default function Home() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
+        <About />
         <Portfolio />
-        <Work />
         <Testimonials />
         <Contact />
       </div>
