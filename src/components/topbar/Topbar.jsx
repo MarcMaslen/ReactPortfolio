@@ -35,6 +35,11 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
               <span>Marc Maslen</span>
             </a>  
           </div>
+          <div className="itemcontainer">
+          <a href="./MarcMaslenCV.docx" download>
+              <span>Download CV</span>
+            </a>  
+          </div>
         </div>
 
         <div className="right">

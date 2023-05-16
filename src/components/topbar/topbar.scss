@@ -53,6 +53,10 @@
                     font-weight: 500;
                 }
 
+                @include intro{
+                    display: none;
+                }
+
                 @include desktop{
                         display: none;
                 }
