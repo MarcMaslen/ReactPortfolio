@@ -4,10 +4,10 @@ export default function Testimonials() {
   const data = [
     {
       id: 1,
-      name: "Mark Abbs",
-      title: "Awin - UK Integration Manager",
-      img: "assets/Mark.jpg",
-      href: "https://www.linkedin.com/in/mark-abbs-82194459/",
+      name: "Richard Talbot",
+      title: "University of Essex - Information Technology Manager",
+      img: "assets/richard.jpeg",
+      href: "https://www.linkedin.com/in/rltalbot/",
       icon: "assets/linkedin.png",
       desc: "Marc was an amazing asset to the UK integration team. He started as an intern, working with Access client's for" 
       + " 4 months. \nDuring this time he had worked through a good amount of access clients, catching on quick and made a guide for the Access process, allowing other "
@@ -16,7 +16,7 @@ export default function Testimonials() {
     {
       id: 2,
       name: "Jackson Correa",
-      title: "Awin - Current Integration Manager",
+      title: "Awin - Integration Manager",
       img: "assets/jackson.jpg",
       icon: "assets/linkedin.png",
       href: "https://www.linkedin.com/in/jackson-correa-949755bb/",
@@ -27,7 +27,7 @@ export default function Testimonials() {
     {
       id: 3,
       name: "Bryson C.Y",
-      title: "Global Integration Assistant at Awin Global",
+      title: "Worked in the same team at Awin",
       img: "assets/bryson.jpg",
       icon: "assets/linkedin.png",
       href: "https://www.linkedin.com/in/bryson-cy/",
