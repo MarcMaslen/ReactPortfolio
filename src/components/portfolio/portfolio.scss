@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    overflow: hidden; 
 
     h1{
         font-size: 40px;
@@ -16,8 +16,6 @@
             font-size: 20px;
             height: 25px;
         }
-        
-
     }
 
     ul{
@@ -28,6 +26,7 @@
         display: flex;
         transition: all 1s ease;
         overflow: hidden;
+        font-size: var(--base-font-size);
     
         @include portfolio{
             height: 80px;
@@ -36,11 +35,7 @@
         }
 
         @include mobile{
-            flex-wrap: wrap;
-            margin: 0;
-            position: relative;
-            justify-content: center;
-            height: 135px;
+            display: none;
         }
 
     }

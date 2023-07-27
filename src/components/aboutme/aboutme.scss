@@ -17,7 +17,8 @@
         }
 
         @include mobile{
-            font-size: 1.5rem;
+            padding-top: 5px;
+            font-size: 1.2rem;
         }
         
     }
@@ -59,7 +60,7 @@
 
             @include mobile{
                 font-size: 0.7rem;
-                width: 350px;
+                width: 320px;
                 font-weight: 400;
                 margin-left: 0;
             }
@@ -114,7 +115,7 @@
 
             @include mobile{
                 font-size: 0.7rem;
-                width: 350px;
+                width: 320px;
                 margin-left: 0;
             }
             
@@ -129,7 +130,7 @@
                     }
 
                     @include mobile{
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         
                     }
                 }

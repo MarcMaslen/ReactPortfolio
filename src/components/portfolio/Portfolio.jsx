@@ -57,10 +57,11 @@ export default function Portfolio() {
     }
   }, [selected]);
 
+
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio.</h1>
-      <ul>
+      <ul style={{ fontSize: 50 }}>
         {list.map((item) => (
           <PortfolioList
             title={item.title}
@@ -71,7 +72,7 @@ export default function Portfolio() {
           />
         ))}
       </ul>
-      <h3>Click the images to see the Github for each project!<br/> <a href="https://github.com/MarcMaslen" target="_blank">Click Here for my Github Profile</a></h3>
+      <h3>Click the images to see each project! This either links to the project or the Github but plenty of info can be found at the link. <br/> <a href="https://github.com/MarcMaslen" target="_blank">Click Here for my Github Profile</a></h3>
       <div className="container">
         {data.map((d) => (
           <a target="_blank" href={d.link} rel="noreferrer">

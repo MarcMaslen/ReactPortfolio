@@ -8,7 +8,7 @@ export default function aboutme() {
           <div className="introduction">
             <div className='about-content'>
               <p><span>Welcome to my Portfolio!</span> <br/><br/> Ever since building my first computer, I have been fascinated with everything IT-related such as hardware, software, and the development of everything inbetween! My main interests are Cyber Security, Data Analytics and Software Engineering.<br></br><br/>
-                I started my journey in 2016 when I went to college fora BTEC in IT, at the same time I started coding daily and learning to drive. I acquired my first job at 17, within 6 months I was promoted to supervisor!<br/><br/> I attended The University of Essex and obtained a 1st Class Honours in BSc Computer Science, graduated in 2023. During my time at University, I accomplished so much and learnt even more such as Cyber Security, Networking, Software Development, Databases, Programming in multiple languages, and much more! I look forward to developing my skills and knowledge even more in the future. <br /><br />
+                I attended The University of Essex and obtained a 1st Class Honours in BSc Computer Science, graduated in 2023. During my time at University, I accomplished so much and learnt even more such as Cyber Security, Networking, Software Development, Databases, Programming in multiple languages, and much more! I look forward to developing my skills and knowledge even more in the future. <br /><br />
                 While finishing University I started full-time work at Awin as a Global Integration Analyst where I continue to improve my skills today. My current goals are to learn AWS, MERN stack and improve softskills.</p>
             </div>
             <div className='middle'></div>
