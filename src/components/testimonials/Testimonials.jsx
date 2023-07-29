@@ -9,8 +9,7 @@ export default function Testimonials() {
       img: "assets/richard.jpeg",
       href: "https://www.linkedin.com/in/rltalbot/",
       icon: "assets/linkedin.png",
-      desc: "Marc was an amazing asset to the UK integration team. He started as an intern, working with Access client's for" 
-      + " 4 months. \nDuring this time he had worked through a good amount of access clients, catching on quick and made a guide for the Access process, allowing other "
+      desc: "Marc's work for the University of Essex was nothing shy of excellent, handling many of the same work our full-time IT Support Analysts do. He was always on time, professional and thorough with the work he carried out for us.  "
       + "new interns to also use this to learn from.",
     },
     {
