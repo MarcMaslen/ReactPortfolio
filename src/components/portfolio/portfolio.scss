@@ -45,6 +45,8 @@
         height: 10%;
         align-items: center;
         text-align: center;
+        margin-left: 3%;
+        margin-right: 3%;
 
         @include mobile{
             font-size: 12px;
@@ -89,7 +91,7 @@
             
             
             @include portfolio{
-                width: 190px;
+                width: 200px;
                 height: 130px;
             }
             

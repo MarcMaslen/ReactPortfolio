@@ -72,7 +72,7 @@ export default function Portfolio() {
           />
         ))}
       </ul>
-      <h3>Click the images to see each project! This either links to the project or the Github but plenty of info can be found at the link. <br/> <a href="https://github.com/MarcMaslen" target="_blank">Click Here for my Github Profile</a></h3>
+      <h3>Click the images to see each project! This either links to the project or the Github but plenty of info can be found at the link. <br/><br/> <a href="https://github.com/MarcMaslen" target="_blank">Click Here for my Github Profile</a></h3>
       <div className="container">
         {data.map((d) => (
           <a target="_blank" href={d.link} rel="noreferrer">
