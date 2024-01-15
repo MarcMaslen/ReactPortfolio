@@ -3,6 +3,7 @@
 
 .about{
     background-image: url("about-background.jpg");
+    overflow:hidden;
     
     h1{
         font-size: 40px;
@@ -17,8 +18,8 @@
         }
 
         @include mobile{
-            padding-top: 5px;
-            font-size: 1.2rem;
+            padding-top: 3px;
+            font-size: 1.5rem;
         }
         
     }
@@ -26,6 +27,7 @@
     .introduction{
         display: flex;
 
+        //When the screen is not big enough for side by side
         @include seven{
             flex-direction: column;
             align-items: center;
@@ -46,7 +48,9 @@
             background-color: white;
             border-radius: 5%;
             
+            
 
+            //1300px
             @include intro{
                 font-size: 1rem;
                 width: 800px;
@@ -62,10 +66,11 @@
             }
 
             @include mobile{
-                font-size: 0.7rem;
-                width: 320px;
+                font-size: 0.65rem;
+                width: 300px;
+                margin-top: .3rem;
                 font-weight: 400;
-                margin-left: 0;
+                padding:15px;
             }
             
                 span{
@@ -74,7 +79,7 @@
                     text-decoration: underline;
 
                     @include intro{
-                        font-size: 1.2rem;
+                        font-size: 1.4rem;
                     }
 
                     @include mobile{
@@ -121,9 +126,12 @@
             }
 
             @include mobile{
-                font-size: 0.7rem;
-                width: 320px;
+                font-size: 0.65rem;
+                width: 300px;
                 margin-left: 0;
+                margin-top: .5rem;
+                padding:15px;
+
             }
             
                 span{
@@ -132,7 +140,7 @@
                     text-decoration: underline;
 
                     @include intro{
-                        font-size: 1.2em;
+                        font-size: 1.4em;
                         
                     }
 

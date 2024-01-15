@@ -1,6 +1,7 @@
 $mainColor: #15023a;
 
-$width: 760px;
+$width: 440px;
+$width_2: 600px;
 $widthtwo: 1210px;
 $widththree:1300px;
 $widthFour: 1100px;
@@ -10,6 +11,7 @@ $widthSeven: 1600px;
 $height: 1500px;
 
 
+//Mobile devices
 @mixin mobile {
     @media (max-width: #{$width}) {
         @content
@@ -18,12 +20,12 @@ $height: 1500px;
     
 }
 
-@mixin longscreen{
-    @media (min-height: #{$height}) {
+@mixin tablets {
+    @media (max-width: #{$width_2}) {
         @content
-        
     }
 }
+
 
 @mixin desktop {
     @media (max-width: #{$widthtwo}) {
@@ -72,4 +74,11 @@ $height: 1500px;
         
     }
     
+}
+
+@mixin longscreen{
+    @media (min-height: #{$height}) {
+        @content
+        
+    }
 }
