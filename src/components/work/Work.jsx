@@ -6,8 +6,8 @@ export default function Work() {
       id: "1",
       role: "Data Consultant with DevOps Responsibilities",
       company: "Snap Analytics | July 2023 - Present",
-      desc: "Developing Matillion and REST API ETL pipelines, migrating customers to high-availability cluster architecture, building Terraform AWS infrastructure, automating Lambda operations, improving CI/CD, and adding CloudWatch, Elasticsearch and New Relic observability.",
-      tags: ["AWS", "Terraform", "Matillion", "Snowflake", "CI/CD", "Lambda"],
+      desc: "Developing Matillion and REST API ETL pipelines, leading Matillion ETL to Data Productivity Cloud migration work with Maia Foundation, building Terraform AWS infrastructure, automating Lambda operations, improving CI/CD, and adding CloudWatch, Elasticsearch and New Relic observability.",
+      tags: ["Maia Foundation", "Data Productivity Cloud", "Matillion ETL", "AWS", "Terraform", "Snowflake"],
     },
     {
       id: "2",

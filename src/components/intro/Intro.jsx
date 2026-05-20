@@ -10,7 +10,7 @@ export default function Intro() {
       showCursor: true,
       backDelay:  1500,
       backSpeed: 60,
-      strings: ["DevOps Engineer", "Data Platform Engineer", "Cloud Delivery Specialist", "Automation Builder"],
+      strings: ["DevOps Engineer", "Data Platform Engineer", "Maia Foundation Specialist", "Cloud Delivery Specialist"],
     });
   }, []);
 
@@ -26,8 +26,8 @@ export default function Intro() {
           <p className="summary">
             DevOps-focused data consultant with 3+ years across AWS, Terraform,
             CI/CD, cloud automation, Matillion, Snowflake, and production support.
-            I build reliable data platforms, automate deployment workflows, and
-            improve cloud environments for scalability, visibility, and cost efficiency.
+            Over the last year I have focused heavily on Matillion ETL to Data
+            Productivity Cloud migrations, building deep Maia Foundation expertise.
           </p>
           <div className="actions">
             <a href="#portfolio">View Projects</a>
@@ -40,8 +40,8 @@ export default function Intro() {
           </div>
           <div className="stats" aria-label="Professional highlights">
             <div>
-              <strong>3+ Years</strong>
-              <span>Cloud, data and integration delivery</span>
+              <strong>Maia</strong>
+              <span>Data Productivity Cloud migration focus</span>
             </div>
             <div>
               <strong>AWS + IaC</strong>

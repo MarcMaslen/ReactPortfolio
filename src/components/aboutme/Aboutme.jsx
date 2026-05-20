@@ -9,7 +9,7 @@ export default function Aboutme() {
     },
     {
       title: "Data Platforms",
-      skills: ["Matillion ETL", "Snowflake", "SQL", "REST APIs", "Data pipelines", "ETL optimisation"],
+      skills: ["Matillion ETL", "Data Productivity Cloud", "Maia Foundation", "Snowflake", "SQL", "REST APIs", "ETL migration"],
     },
     {
       title: "Operations & Tooling",
@@ -37,9 +37,9 @@ export default function Aboutme() {
           <p>
             I am a Data Consultant at Snap Analytics with DevOps responsibilities,
             working across AWS infrastructure, Matillion and Snowflake delivery,
-            production support, CI/CD workflows, and automation. I like roles where
-            I can move between investigation, implementation, and making systems
-            easier for other people to run.
+            production support, CI/CD workflows, and automation. Over the last year,
+            my main focus has been Matillion ETL to Data Productivity Cloud migration,
+            with a strong practical specialism in Maia Foundation.
           </p>
         </div>
         <div className="about-content1">
