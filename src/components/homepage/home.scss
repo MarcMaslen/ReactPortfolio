@@ -1,24 +1,14 @@
-.app{
-    height: 100vh;
+@import "../../global.scss";
 
-    .sections{
-        width: 100%;
-        height: calc(100vh - 70px);
-        background-color: lightsalmon;
-        position: relative;
-        top: 70px;
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
-        scrollbar-width: none; //for firefox
-        &::-webkit-scrollbar{
-            display: none;
-        }
+.app {
+  .sections {
+    background: linear-gradient(180deg, #f5f7fb 0%, #ffffff 38%, #eef4f8 100%);
 
-        > *{
-            width: 100vw;
-            height: calc(100vh - 70px);
-            scroll-snap-align: start;
-            scroll-behavior: smooth;
-        }
+    > * {
+      width: 100%;
+      min-height: auto;
+      overflow: visible;
+      scroll-margin-top: 70px;
     }
+  }
 }

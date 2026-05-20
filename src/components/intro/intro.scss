@@ -1,143 +1,181 @@
 @import '../../global.scss';
 
-.intro{
-    background-color: white;
+.intro {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  padding: 80px 0 70px;
+
+  .heroContent {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+    gap: 56px;
+    align-items: center;
+
+    @include tablets {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+  }
+
+  .copy {
+    .eyebrow {
+      margin: 0 0 16px;
+      color: $accentColor;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      color: $inkColor;
+      font-size: clamp(2.65rem, 7vw, 6rem);
+      line-height: 1.04;
+      overflow-wrap: anywhere;
+    }
+
+    h3 {
+      min-height: 0;
+      margin: 20px 0 0;
+      color: $mainColor;
+      font-size: clamp(1.55rem, 3vw, 2.35rem);
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+
+      span {
+        color: $accentColor;
+      }
+
+      .ityped-cursor {
+        animation: blink 1s infinite;
+      }
+    }
+
+    .summary {
+      max-width: 680px;
+      margin: 24px 0 0;
+      color: $mutedColor;
+      font-size: 1.15rem;
+      line-height: 1.75;
+    }
+  }
+
+  .actions {
     display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+    padding: 6px 0 8px;
+    overflow: visible;
 
-    @include mobile{
-        flex-direction: column;
-        align-items: center;
+    a {
+      min-height: 46px;
+      padding: 13px 18px;
+      border: 1px solid $mainColor;
+      border-radius: 8px;
+      color: $mainColor;
+      font-weight: 800;
+      transition: transform 180ms ease, background-color 180ms ease;
+
+      &:first-child {
+        color: white;
+        background: $mainColor;
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+        background: #e7f4f0;
+      }
+    }
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 34px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
     }
 
-    .left{
-        flex: 0.5;
-        overflow: hidden;
-        
-        @include longscreen{
-            margin-top: 15vh;
-        }
-
-        @include intro{
-            flex: 0;
-        }
-
-        .imgContainer{
-            width: 520px;
-            height: 520px;
-            background-color: rgb(29, 68, 197);
-            box-shadow: 9px 9px 4px #464444;
-            border-radius: 50%;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            float: right;
-            margin-top: 15vh;
-            margin-right: 2vh;
-            
-        
-
-            @include intro{
-                display:  none;
-                height: 400px;
-                width: 400px;
-                margin-top: 25vh;
-            }
-
-            img{
-                height: 800px;
-                width: 600px;
-                object-fit: none;
-                overflow: hidden;
-                object-position: 53% -5%;
-
-                @include intro{
-                    height: 400px;
-                }
-
-                @include mobile{
-                    height: 300px;
-                }
-            }
-        }
-      
+    div {
+      min-height: 92px;
+      padding: 18px;
+      border: 1px solid $lineColor;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.75);
     }
-    .right{
-        flex: 0.5;
-        position: relative;
 
-        @include intro{
-            flex: 1;
-            align-items: center;
-            text-align: center;
-        }
-
-        .wrapper{
-            width: 80%;
-            height: 100%;
-            padding-left: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            @include intro{
-                padding-left: 100px;
-            }
-
-            @include mobile{
-                padding-left: 0;
-                width: 100%;
-                align-items: center;
-            }
-
-
-            h1{
-                font-size: 60px;
-                margin: 10px 0;
-
-                @include mobile{
-                    font-size: 30px;
-                }
-            }
-
-            h2{
-                font-size: 35px;
-                @include mobile{
-                    font-size: 20px;
-                }
-
-            }
-
-            h3{
-                font-size: 30px;
-
-                @include mobile{
-                    font-size: 20px;
-                }
-
-                span{
-                    font-size: 30px;
-                    color: crimson;
-
-                    @include mobile{
-                        font-size: 20px;
-                    }
-                }
-
-                .ityped-cursor{
-                    animation: blink 1s infinite;
-                }
-
-                @keyframes blink {
-                    50%{
-                        opacity: 1;
-                    }
-                    100%{
-                        opacity: 0;
-                    }
-                }
-            }
-        }
-        
-
+    strong,
+    span {
+      display: block;
     }
+
+    strong {
+      color: $inkColor;
+      font-size: 1.1rem;
+    }
+
+    span {
+      margin-top: 6px;
+      color: $mutedColor;
+      font-size: 0.92rem;
+    }
+  }
+
+  .portrait {
+    justify-self: end;
+    width: min(100%, 330px);
+    aspect-ratio: 3 / 4;
+    border: 1px solid $lineColor;
+    border-radius: 8px;
+    overflow: hidden;
+    background: $panelColor;
+    box-shadow: 0 24px 60px rgba(19, 34, 56, 0.16);
+
+    @include tablets {
+      justify-self: start;
+      width: min(100%, 280px);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 52% 0%;
+      transform: scale(2.74);
+      transform-origin: 52% 16%;
+    }
+  }
+
+  @include mobile {
+    padding-top: 52px;
+
+    .heroContent {
+      width: min(100% - 28px, 1120px);
+    }
+
+    .copy {
+      h1 {
+        font-size: clamp(2.45rem, 14vw, 3.9rem);
+      }
+
+      h3 {
+        font-size: 1.35rem;
+      }
+
+      .summary {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  50% { opacity: 1; }
+  100% { opacity: 0; }
 }

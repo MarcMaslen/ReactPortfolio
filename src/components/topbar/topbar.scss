@@ -1,129 +1,109 @@
 @import "../../global.scss";
 
-.topbar{
-    width: 100%;
-    height: 70px;
-    background-color:  rgb(255, 255, 255);
-    color: $mainColor;
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    transition: all 1s ease;
+.topbar {
+  width: 100%;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.92);
+  color: $mainColor;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  border-bottom: 1px solid $lineColor;
+  backdrop-filter: blur(16px);
+  transition: background-color 220ms ease, color 220ms ease;
+
+  .wrapper {
+    width: min(1180px, calc(100% - 32px));
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .left {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .logo {
+    flex: 0 0 auto;
+    color: inherit;
+    font-size: 1.45rem;
+    font-weight: 900;
+  }
+
+  .itemcontainer {
+    display: flex;
+    align-items: center;
+
+    @include intro {
+      display: none;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .icon {
+      width: 18px;
+      height: 18px;
+      margin-right: 6px;
+    }
+
+    span {
+      font-size: 0.92rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+  }
+
+  .hamburger {
+    width: 32px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
     overflow: hidden;
+    background: transparent;
 
-    .wrapper{
-        padding: 10px 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .left{
-            display: flex;
-            align-items: center;
-
-            .logo{
-                font-size: 42px;
-                font-weight: 700;
-                text-decoration: none;
-                color: inherit;
-                margin-right: 40px;
-
-                @include mobile{
-                    font-size: 25px;
-                }
-            }
-
-        
-
-            .itemcontainer{
-                display: flex;
-                align-items: center;
-                margin-right: 30px;
-
-                @include mobile{
-                    display: none;
-                }
-
-                .icon{
-                    font-size: 18px;
-                    margin-right: 5px;
-                }
-
-                span{
-                    font-size: 15px;
-                    font-weight: 500;
-                }
-
-                @include seven{
-                    .icon{
-                        font-size: 12px;
-                        margin-right: 2px;
-                    }
-    
-                    span{
-                        font-size: 15px;
-                        font-weight: 500;
-                    }
-                }
-
-                @include intro{
-                        display: none;
-                }
-            }
-
-        }
-
-        .right{
-
-            .hamburger{
-                width: 32px;
-                height: 25px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                cursor: pointer;
-
-
-                span{
-                    height: 3px;
-                    width: 100%;
-                    background-color: $mainColor;
-                    transform-origin: left;
-                    transition: all 2s ease;
-
-                }
-
-            }
-        }
+    span {
+      height: 3px;
+      width: 100%;
+      border-radius: 999px;
+      background-color: $mainColor;
+      transform-origin: center;
+      transition: transform 220ms ease, opacity 220ms ease, background-color 220ms ease;
     }
+  }
 
-    &.active{
-        background-color: $mainColor;
-        color: white;
+  &.active {
+    background-color: $mainColor;
+    color: white;
 
-        .itemcontainer{
-            .icon{
-                color: white;
-            }
-            span{
-                color: white;
-            }
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: white;
+          transform: translateY(10.5px) rotate(45deg);
         }
 
-        .hamburger{
-            span{
-                &:first-child{
-                    background-color: white;
-                    transform: rotate(45deg);
-                }
-                &:nth-child(2){
-                    opacity: 0;
-                }
-                &:last-child{
-                    background-color: white;
-                    transform: rotate(-45deg);
-                }
-            }
+        &:nth-child(2) {
+          opacity: 0;
         }
+
+        &:last-child {
+          background-color: white;
+          transform: translateY(-10.5px) rotate(-45deg);
+        }
+      }
     }
+  }
 }

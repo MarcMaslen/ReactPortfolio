@@ -11,6 +11,9 @@ export default function menu({menuOpen, setMenuOpen}) {
                     <a href="#about">About</a>
                 </li>
                 <li onClick={()=>setMenuOpen(false)}>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li onClick={()=>setMenuOpen(false)}>
                     <a href="#portfolio">Portfolio</a>
                 </li>
                 <li onClick={()=>setMenuOpen(false)}>
@@ -20,7 +23,7 @@ export default function menu({menuOpen, setMenuOpen}) {
                     <a href="#contact">Contact</a>
                 </li>
                 <li onClick={()=>setMenuOpen(false)}>
-                    <a href="https://www.gigabyteblogger.com/" target='_blank'>Blog</a>
+                    <a href="https://www.gigabyteblogger.com/" target='_blank' rel="noreferrer">Blog</a>
                 </li>
             </ul>
         </div>

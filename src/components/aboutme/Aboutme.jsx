@@ -1,29 +1,78 @@
 import React from 'react';
 import './aboutme.scss';
 
-export default function aboutme() {
-    return (
-      <div className="about" id="about">
-          <h1>About Me.</h1>
-          <div className="introduction">
-            <div className='about-content'>
-              <p><span>Who is this guy?</span> <br/><br/> My name is Marc. I am currently a Technical Consultant and Web Developer based near London.<br></br><br/>
-                I attended The University of Essex and obtained a 1st Class Honours in BSc Computer Science with Placement year. 
-                <br/><br/>I enjoy solving problems and have interests in areas such as Cyber Security, Networking, Software Development, Databases, Programming and much more! I look forward to developing my skills and knowledge even more in the future. <br /><br />
-                 I have experience working as an Integration Analyst, Software Developer and working on the IT Help desk at Uni. As a Technical Consultant my work is split between development and support. </p>
-            </div>
-            <div className='middle'></div>
-            <div className='about-content1'>
-              <p><span>What can I do?</span><br/><br/> At heart I am a developer. For front-end development I usually work with Javascript either standalone or using popular frameworks like ReactJS or VueJS. I also make the websites look better with SCSS, CSS, whatever is needed including bootstrap. 
-              <br/><br/> For back-end I also work with Javascript (NodeJS, Express, MongoDB, AWS etc). Although whenever the project requires PHP I can do that too usually with wordpress or Laravel. 
-              <br/><br/> In my day to day role as a Technical Consultant I use Matillion, Snowflake and AWS to manage data ingestion, transformation and orchestration. This role includes working 40% support and 60% development including keeping these instances updated, working and improving workflows for better performance. 
-              {/* <br/><br/> · Languages - HTML, CSS, SCSS, Javascript, C#, Java, Python, SQL, PHP <br/><br/>· Frameworks - React.js, Node.js, Express.js, Tailwind, Bootstrap, Laravel, TypeScript
-              <br/><br/>· Tools - GitHub, Jira, Salesforce, Outlook, Scrum, Kanban, Agile, Asana, WordPress, Google Tag Manager, Google Analytics, Visual Studio, Visual Studio Code, IntelliJ, Apache, Unity, Blender, Shopify, Slack, Virtual machines, Remote desktop, MongoDB, Firebase and more
-              <br/><br/>· Soft Skills - Time management, customer service, problem solving, team work, communication, leadership, adaptability, organization, creativity, and more
-              <br/><br/>· Proudest Achievements - Blue Zero Web Designs, Completing my Degree with First Class Honours, Continuing to better myself everyday!  */}
-              </p>
+export default function Aboutme() {
+  const skillGroups = [
+    {
+      title: "Cloud & DevOps",
+      skills: ["AWS", "Terraform", "CI/CD", "GitHub Actions", "Bitbucket Pipelines", "Docker", "GitOps"],
+    },
+    {
+      title: "Data Platforms",
+      skills: ["Matillion ETL", "Snowflake", "SQL", "REST APIs", "Data pipelines", "ETL optimisation"],
+    },
+    {
+      title: "Operations & Tooling",
+      skills: ["CloudWatch", "Elasticsearch", "New Relic", "Linux", "Jira", "Confluence", "Postman"],
+    },
+  ];
+
+  const certifications = [
+    "Matillion Associate Certification",
+    "Matillion Data Productivity Cloud Certification",
+    "SnowPro Core Certification",
+    "AWS Certified Cloud Practitioner - in progress",
+    "AWS Solutions Architect Associate - 2026 target",
+  ];
+
+  return (
+    <div className="about" id="about">
+      <div className="sectionHeader">
+        <p>Professional snapshot</p>
+        <h1>DevOps engineer with a developer's toolkit.</h1>
+      </div>
+      <div className="introduction">
+        <div className="about-content">
+          <h2>Current Focus</h2>
+          <p>
+            I am a Data Consultant at Snap Analytics with DevOps responsibilities,
+            working across AWS infrastructure, Matillion and Snowflake delivery,
+            production support, CI/CD workflows, and automation. I like roles where
+            I can move between investigation, implementation, and making systems
+            easier for other people to run.
+          </p>
+        </div>
+        <div className="about-content1">
+          <h2>Background</h2>
+          <p>
+            My foundation is a First Class BSc Computer Science degree with a placement
+            year from the University of Essex, where I was awarded Dean's List of
+            Excellence for finishing in the top 5% of my cohort. Since then I have
+            built experience across integration analysis, IT support, technical
+            consulting, cloud automation, and DevOps-focused data platform work.
+          </p>
+        </div>
+      </div>
+      <div className="skillsGrid">
+        {skillGroups.map((group) => (
+          <div className="skillCard" key={group.title}>
+            <h2>{group.title}</h2>
+            <div>
+              {group.skills.map((skill) => (
+                <span key={skill}>{skill}</span>
+              ))}
             </div>
           </div>
+        ))}
       </div>
-    );
-  }
+      <div className="certifications">
+        <h2>Certifications</h2>
+        <div>
+          {certifications.map((certification) => (
+            <span key={certification}>{certification}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

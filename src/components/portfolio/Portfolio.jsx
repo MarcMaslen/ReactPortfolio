@@ -3,10 +3,10 @@ import PortfolioList from "../porfolioList/PortfolioList";
 import { useEffect, useState } from "react";
 import {
   featuredPortfolio,
-  webPortfolio,
-  gamePortfolio,
-  softwarePortfolio,
-  uniPortfolio,
+  devopsPortfolio,
+  dataPortfolio,
+  developmentPortfolio,
+  otherPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
@@ -18,20 +18,20 @@ export default function Portfolio() {
       title: "Featured",
     },
     {
-      id: "web",
-      title: "Web Development",
+      id: "devops",
+      title: "Cloud & DevOps",
     },
     {
-      id: "game",
-      title: "Game Development",
+      id: "data",
+      title: "Data Engineering",
     },
     {
-      id: "software",
-      title: "Software Development",
+      id: "development",
+      title: "Development Foundations",
     },
     {
-      id: "uni",
-      title: "University Projects",
+      id: "other",
+      title: "Other Work",
     },
   ];
 
@@ -40,17 +40,17 @@ export default function Portfolio() {
       case "featured":
         setData(featuredPortfolio);
         break;
-      case "web":
-        setData(webPortfolio);
+      case "devops":
+        setData(devopsPortfolio);
         break;
-      case "game":
-        setData(gamePortfolio);
+      case "data":
+        setData(dataPortfolio);
         break;
-      case "software":
-        setData(softwarePortfolio);
+      case "development":
+        setData(developmentPortfolio);
         break;
-      case "uni":
-        setData(uniPortfolio);
+      case "other":
+        setData(otherPortfolio);
         break;
       default:
         setData(featuredPortfolio);
@@ -60,10 +60,14 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio.</h1>
-      <ul style={{ fontSize: 50 }}>
+      <div className="sectionHeader">
+        <p>Selected work</p>
+        <h1>Projects and proof points.</h1>
+      </div>
+      <ul>
         {list.map((item) => (
           <PortfolioList
+            key={item.id}
             title={item.title}
             active={selected === item.id}
             setSelected={setSelected}
@@ -72,14 +76,25 @@ export default function Portfolio() {
           />
         ))}
       </ul>
-      <h3>Click the images to see each project! This either links to the project or the Github but plenty of info can be found at the link. <br/><br/> <a href="https://github.com/MarcMaslen" target="_blank">Click Here for my Github Profile</a></h3>
+      <p className="portfolioIntro">
+        A curated set of work aligned to my current direction. Professional platform
+        work is represented as capability-focused case studies where client details
+        need to stay private.
+        <a href="https://github.com/MarcMaslen" target="_blank" rel="noreferrer"> View GitHub</a>
+      </p>
       <div className="container">
         {data.map((d) => (
-          <a target="_blank" href={d.link} rel="noreferrer">
-          <div className="item">
-            <img src={d.img} alt="" />
-          </div>
-          <h3>{d.title}</h3>
+          <a target="_blank" href={d.link} rel="noreferrer" key={d.id}>
+            <div className="item">
+              <div className={`projectVisual ${d.visual || "default"}`} aria-hidden="true">
+                <span>{d.type}</span>
+              </div>
+              <div className="projectContent">
+                <span>{d.type}</span>
+                <h3>{d.title}</h3>
+                <p>{d.desc}</p>
+              </div>
+            </div>
           </a>
         ))}
       </div>

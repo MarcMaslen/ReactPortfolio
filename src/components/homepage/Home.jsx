@@ -5,6 +5,7 @@ import About from "../aboutme/Aboutme";
 import Testimonials from "../testimonials/Testimonials";
 import Contact from "../contact/Contact";
 import Portfolio from "../portfolio/Portfolio";
+import Work from "../work/Work";
 import { useState } from "react";
 import './home.scss';
 
@@ -18,6 +19,7 @@ export default function Home() {
       <div className="sections">
         <Intro />
         <About />
+        <Work />
         <Portfolio />
         <Testimonials />
         <Contact />

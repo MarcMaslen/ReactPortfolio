@@ -1,84 +1,70 @@
-$mainColor: #15023a;
+$mainColor: #132238;
+$accentColor: #1f8a70;
+$inkColor: #111827;
+$mutedColor: #64748b;
+$panelColor: #ffffff;
+$lineColor: #d9e2ec;
 
-$width: 440px;
-$width_2: 600px;
+$width: 720px;
+$width_2: 900px;
 $widthtwo: 1210px;
-$widththree:1300px;
+$widththree: 1300px;
 $widthFour: 1100px;
 $widthFive: 1720px;
 $widthSix: 1600px;
 $widthSeven: 1600px;
 $height: 1500px;
 
-
-//Mobile devices
 @mixin mobile {
-    @media (max-width: #{$width}) {
-        @content
-        
-    }
-    
+  @media (max-width: #{$width}) {
+    @content;
+  }
 }
 
 @mixin tablets {
-    @media (max-width: #{$width_2}) {
-        @content
-    }
+  @media (max-width: #{$width_2}) {
+    @content;
+  }
 }
-
 
 @mixin desktop {
-    @media (max-width: #{$widthtwo}) {
-        @content
-        
-    }
-    
+  @media (max-width: #{$widthtwo}) {
+    @content;
+  }
 }
 
-
 @mixin intro {
-    @media (max-width: #{$widththree}) {
-        @content
-        
-    }
-    
+  @media (max-width: #{$widththree}) {
+    @content;
+  }
 }
 
 @mixin portfolio {
-    @media (max-width: #{$widthFour}) {
-        @content
-        
-    }
-    
+  @media (max-width: #{$widthFour}) {
+    @content;
+  }
 }
 
 @mixin portfolioTwo {
-    @media (max-width: #{$widthFive}) {
-        @content
-        
-    }
-    
+  @media (max-width: #{$widthFive}) {
+    @content;
+  }
 }
 
 @mixin Work {
-    @media (max-width: #{$widthSix}) {
-        @content
-        
-    }
-    
+  @media (max-width: #{$widthSix}) {
+    @content;
+  }
 }
 
 @mixin seven {
-    @media (max-width: #{$widthSeven}) {
-        @content
-        
-    }
-    
+  @media (max-width: #{$widthSeven}) {
+    @content;
+  }
 }
 
 @mixin longscreen{
-    @media (min-height: #{$height}) {
-        @content
-        
-    }
+  @media (min-height: #{$height}) {
+    @content;
+  }
 }

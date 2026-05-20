@@ -1,200 +1,67 @@
-@import "../../global.scss";
+@import '../../global.scss';
 
 .work {
-  background-color: rgb(20, 73, 220);
-  display: flex;
-  align-items: center;
-  justify-self: center;
+  padding: 82px 0;
+  background: #eef4f8;
 
-  .arrow {
-    height: 80px;
-    position: absolute;
+  .timeline {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+  }
 
-    @include Work{
-      height: 60px;
+  .timelineItem {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 20px;
+    padding: 28px;
+    border: 1px solid $lineColor;
+    border-radius: 8px;
+    background: white;
+
+    @include mobile {
+      grid-template-columns: 1fr;
     }
 
-    @include desktop {
-      display: none;
+    > span {
+      color: $accentColor;
+      font-size: 1.8rem;
+      font-weight: 900;
     }
 
-    &.left {
-      left: 100px;
-      transform: rotateY(180deg);
-      cursor: pointer;
+    h2 {
+      margin: 0;
+      color: $inkColor;
+      font-size: 1.55rem;
     }
 
-    &.right {
-      right: 100px;
-      cursor: pointer;
+    h3 {
+      margin: 6px 0 12px;
+      color: $mutedColor;
+      font-size: 1rem;
+    }
+
+    p {
+      max-width: 760px;
+      margin: 0;
+      color: $mutedColor;
+      line-height: 1.7;
     }
   }
 
-  .slider {
-    height: 700px;
+  .tags {
     display: flex;
-    position: absolute;
-    left: 0;
-    transition: all 1s ease-out;
-    
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
 
-    @include desktop {
-      height: 100vh;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    @include mobile {
-      height: 70vh;
-    }
-
-    .container {
-      width: 100vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-      
-
-      .item {
-        width: 1200px;
-        height: 95%;
-        background-color: white;
-        box-shadow: 0 0 7px 7px black;
-        // box-shadow: 13px 7px 3px #696565;
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        
-        @include Work{
-          width: 900px;
-        }
-
-        @include desktop {
-          width: 80%;
-          height: 250px;
-          margin: 15px 0;
-        }
-
-        @include mobile {
-          height: 120px;
-        }
-
-        .left {
-          flex: 7;
-          height: 95%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          
-
-          @include desktop {
-            flex: 6;
-          }
-
-          .leftcontainer {
-            width: 70%;
-            height: 75%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            @include desktop {
-              width: 90%;
-              height: 90%;
-            }
-
-
-            .imgcontainer {
-              width: 40px;
-              height: 40px;
-              border-radius: 50%;
-              background-color: rgb(245, 179, 155);
-              display: flex;
-              align-items: center;
-              justify-content: center;
-
-              @include desktop {
-                width: 20px;
-                height: 20px;
-              }
-
-              img {
-                width: 25px;
-
-                @include desktop {
-                  width: 10px;
-                }
-              }
-            }
-
-            h2 {
-              font-size: 30px;
-              @include desktop {
-                font-size: 15px;
-              }
-
-              @include mobile {
-                font-size: 10px;
-              }
-            }
-
-            p {
-              font-size: 20px;
-
-              @include desktop {
-                font-size: 12px;
-                margin-top: 2px;
-              }
-
-              @include mobile {
-                display: none;
-              }
-            }
-
-            button {
-              width: 170px;
-              height: 50px;
-              color:white;
-              background-color: rgb(68, 52, 212);
-              box-shadow: 2px 3px 2px #464444;
-              border: none;
-              font-size: 20px;
-              border-radius: 10px;
-              margin-bottom: 10px;
-              font-weight: 500;
-              cursor: pointer;
-              //text-decoration: underline;
-
-              @include desktop {
-                font-size: 10px;
-                margin-top: 2px;
-                width: 70px;
-                height: 30px;
-              }
-            }
-          }
-        }
-
-        .right {
-          flex: 7;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          overflow: hidden;
-
-          @include desktop {
-            flex: 4;
-            height: 100%;
-          }
-
-          img {
-            width: 500px;
-            //transform: rotate(-10deg);
-          }
-        }
-      }
+    small {
+      padding: 7px 10px;
+      border: 1px solid $lineColor;
+      border-radius: 8px;
+      color: $mainColor;
+      font-weight: 800;
     }
   }
 }

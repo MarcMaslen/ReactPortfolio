@@ -1,29 +1,73 @@
-.app{
-    height: 100vh;
+@import "./global.scss";
 
-    a {
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-      }
+* {
+  box-sizing: border-box;
+}
 
-    .sections{
-        width: 110%;
-        height: calc(100vh - 70px);
-        background-color: lightsalmon;
-        position: relative;
-        top: 70px;
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
-        scrollbar-width: none; //for firefox
-        &::-webkit-scrollbar{
-            display: none;
-        }
+html,
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
-        > *{
-            width: 100vw;
-            height: calc(100vh - 70px);
-            scroll-snap-align: start;
-            scroll-behavior: smooth;
-        }
+body {
+  color: #18212f;
+  background: #f5f7fb;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  height: auto;
+  max-height: none;
+  overflow: visible !important;
+}
+
+.app {
+  min-height: 100vh;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .sections {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 70px;
+    overflow-x: hidden;
+  }
+
+  .sectionHeader {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto 36px;
+
+    p {
+      margin: 0 0 10px;
+      color: $accentColor;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
+
+    h1 {
+      display: block;
+      width: 100%;
+      height: auto;
+      min-height: 0;
+      padding: 0 0 0.08em;
+      margin: 0;
+      color: $inkColor;
+      font-size: clamp(1.75rem, 3.1vw, 2.95rem);
+      line-height: 1.22;
+      max-width: 760px;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      overflow: visible !important;
+    }
+  }
 }
