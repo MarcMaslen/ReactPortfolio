@@ -26,8 +26,8 @@ export default function Intro() {
           <p className="summary">
             DevOps-focused data consultant with 3+ years across AWS, Terraform,
             CI/CD, cloud automation, Matillion, Snowflake, and production support.
-            Over the last year I have focused heavily on Matillion ETL to Data
-            Productivity Cloud migrations, building deep Maia Foundation expertise.
+            I build reliable data platforms, automate delivery workflows, and improve
+            cloud environments for scalability, observability, and long-term maintainability.
           </p>
           <div className="actions">
             <a href="#portfolio">View Projects</a>
@@ -40,8 +40,8 @@ export default function Intro() {
           </div>
           <div className="stats" aria-label="Professional highlights">
             <div>
-              <strong>Maia</strong>
-              <span>Data Productivity Cloud migration focus</span>
+              <strong>Data Platforms</strong>
+              <span>Matillion, Snowflake and ETL delivery</span>
             </div>
             <div>
               <strong>AWS + IaC</strong>
@@ -49,7 +49,7 @@ export default function Intro() {
             </div>
             <div>
               <strong>Top 5%</strong>
-              <span>Dean's List, First Class Honours</span>
+              <span>First Class BSc Computer Science</span>
             </div>
           </div>
         </div>
